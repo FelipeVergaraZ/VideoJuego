@@ -175,13 +175,35 @@
                     .marco {
                         position: relative;
                         width: 100%;
-                        left: 190px;
-                        bottom: 145px;
+                        bottom: 300px;
                     }
                     
                     .personajes {
+
+                        padding: 50px;
                         position: relative;
                         width: 100%;
-                        left: 215px;
-                        bottom: -145px;
+                        top: 300px;
+                    }
+                    
+                    .personajes2 {
+                        
+                        position: relative;
+                        width: 100%;
+                        top: 300px;
+                    }
+                    
+                    .posii {
+                        width: 100%;
+                        position: absolute;
+                        top: 199%;
+                        right: 100px;
+                        text-align: right;
+                    }
+                    
+                    .posii2 {
+                        width: 100%;
+                        position: absolute;
+                        top: 199%;
+                        text-align: right;
                     }
