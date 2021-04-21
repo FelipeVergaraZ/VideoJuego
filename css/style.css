@@ -76,11 +76,22 @@
                 }
                 
                 .jumbotron00 {
-                    padding: 50px;
                     position: relative;
+                    padding: 50px;
+                    text-align: center;
+                    width: 400px;
                     border: rgb(0, 0, 0) 5px double;
                     color: inherit;
-                    background-color: rgba(255, 255, 255, 0.77);
+                    background-color: rgba(184, 106, 106, 0.822);
+                }
+                
+                .pepe {
+                    text-align: center;
+                }
+                
+                .contac {
+                    position: absolute;
+                    left: 800px;
                 }
                 
                 .jumbotron {
