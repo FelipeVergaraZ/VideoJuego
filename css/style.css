@@ -60,6 +60,10 @@ body {
     }
 }
 
+.lgito {
+    left: 200px;
+}
+
 
 /* MARCOS */
 
@@ -94,18 +98,6 @@ body {
     padding-bottom: 40px;
     padding-left: 30px;
     margin-bottom: 40px;
-    color: inherit;
-    background-color: rgba(255, 255, 255, 0.77);
-}
-
-.jumbotronpersonajes {
-    padding: 3px 10px;
-    height: 1000px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border: rgb(0, 0, 0) 5px solid;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
     color: inherit;
     background-color: rgba(255, 255, 255, 0.77);
 }
@@ -263,11 +255,27 @@ body {
     bottom: 300px;
 }
 
-.personajes {
-    padding: 50px;
+.marco1 {
     position: relative;
+    width: ;
+    bottom: 420px;
+    right: 30px;
+}
+
+.personajes1 {
+    position: relative;
+    width: ;
+}
+
+.jumbotronperso {
+    border: rgb(0, 0, 0) 5px solid;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     width: 100%;
-    top: 300px;
+    height: 40%;
+    height: 700px;
+    color: inherit;
+    background-color: rgba(255, 255, 255, 0.77);
 }
 
 
