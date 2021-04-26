@@ -138,16 +138,6 @@ body {
     background-color: rgba(255, 255, 255, 0.77);
 }
 
-.jumbotron00 {
-    position: relative;
-    padding: 50px;
-    text-align: center;
-    width: 400px;
-    border: rgb(0, 0, 0) 5px double;
-    color: inherit;
-    background-color: rgba(184, 106, 106, 0.822);
-}
-
 .jumbotron2 {
     padding-left: 10px;
     padding-right: 10px;
@@ -174,6 +164,28 @@ body {
     margin-bottom: 0px;
     color: inherit;
     background-color: rgba(0, 0, 0, 0.77);
+}
+
+.jumbotrontitulo {
+    border: rgb(0, 0, 0) 5px solid;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: inherit;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 6px 20px 10px black;
+}
+
+.jumbotrontext {
+    color: inherit;
+    background-color: rgba(255, 255, 255, 0.77);
+    border: rgb(0, 0, 0) 5px solid;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(255, 255, 255);
 }
 
 .colti {
@@ -257,14 +269,12 @@ body {
 
 .marco1 {
     position: relative;
-    width: ;
     bottom: 420px;
     right: 30px;
 }
 
 .personajes1 {
     position: relative;
-    width: ;
 }
 
 .jumbotronperso {
@@ -335,4 +345,84 @@ button {
     left: 500px;
     width: 100%;
     position: 500px;
+}
+
+.conim {
+    text-align: center;
+    position: center;
+}
+
+input:invalid {
+    box-shadow: 0px 0px 20px red inset, 0px 0px 25px rgb(255, 0, 0);
+    background-color: #FDD;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+
+
+/* Este es el diseño para nuestros mensajes de error */
+
+.error {
+    width: 100%;
+    padding: 0;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0.3em;
+}
+
+.marcocontacto {
+    width: 100%;
+    border: rgb(0, 0, 0) 5px double;
+    color: inherit;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.marcocontacto {
+    width: 100%;
+    border: rgb(0, 0, 0) 5px double;
+    color: inherit;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.blanco {
+    width: 100%;
+    border: rgb(255, 255, 255) 5px;
+    color: inherit;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+.botonenviar {
+    width: 100%;
+    border: rgb(255, 255, 255) 5px;
+    color: inherit;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    border: rgb(0, 0, 0) 5px double;
+}
+
+.jumbotron00 {
+    padding: 6px 20px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    margin-bottom: 50px;
+    width: 100%;
+    border: rgb(0, 0, 0) 5px double;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: inherit;
+    background-color: #fafafae8;
 }
