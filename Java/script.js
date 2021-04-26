@@ -32,7 +32,10 @@ function validarusuario() {
     }
 }
 
+
+
 function validar() {
     validarusuario();
     validarnumero();
+
 }
