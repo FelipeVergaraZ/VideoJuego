@@ -50,7 +50,7 @@
                         <div class="p-5">
                             <br>
                             <div>
-                                <form class="marcocontacto" action="/my-handling-form-page" method="post">
+                                <form name="myForm" class="marcocontacto" action="/my-handling-form-page" onsubmit="return validar()" method="post">
 
                                     <div class="pepe">
                                         <div class=" jumbotrontitulo">
@@ -60,25 +60,29 @@
                                         <label for="username"></label><br>
 
                                         <p class=" jumbotrontext">USUARIO:</p>
-                                        <input class="blanco" type="text" id="username" name="username" pattern="[A-Za-z]{3,15}" required placeholder="Usuario"><br>
+                                        <input class="blanco" type="text" id="username" name="username" pattern="[A-Za-z]{3,15}" placeholder="Usuario"><br>
 
                                         <label for="email"></label><br>
                                         <P class=" jumbotrontext">EMAIL:</P>
-                                        <input class="blanco" type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$" required placeholder="nombre@gmail.com"><br>
+                                        <input class="blanco" type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$" placeholder="nombre@gmail.com"><br>
 
                                         <label for="phone"></label>
                                         <br>
 
                                         <P class=" jumbotrontext">NUMERO TELEFONICO:</P>
-                                        <input class="blanco" type="tel" id="phone" name="phone" pattern="\x2b[0-9]+" required placeholder="+56912345678">
+                                        <small class=" jumbotrontextsm">+56</small>
+                                        <input class="blanco" type="tel" id="phone" name="phone" pattern="[0-9]{9}" placeholder="987654321">
                                         <br>
 
                                         <label for="msg"></label><br>
                                         <P class=" jumbotrontext">MENSAJE</P>
-                                        <textarea class="blanco" id="msg" name="user_message" pattern="[A-Za-z]{5,300}" required placeholder="Escribe un  mensaje"></textarea>
+
+                                        <input class="blancocel" type="text" id="msg" name="message" pattern="[A-Za-z]{0,300}" placeholder="Escribenos un mensaje."><br>
+
                                         <br>
                                         <br>
                                         <input class="botonenviar" type="reset" onclick="alert('SE BORRO TODO LO INSERTADO')" value="-BORRAR TODO-" required>
+                                        <br>
                                         <br>
                                         <input class="botonenviar" type="submit" type="button" value="-ENVIAR-" required>
                                     </div>

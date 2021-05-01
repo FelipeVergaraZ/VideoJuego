@@ -7,35 +7,28 @@ function myFunction() {
     }
 }
 
-function validarnumero() {
-    var x, text;
-
-    // Get the value of the input field with id="numb"
-    x = document.getElementById("numb").value;
-
-
-    // If x is Not a Number or less than one or greater than 10
-    if (isNaN(x) || x < 1 || x > 10) {
-        text = "numero invalido";
-    } else {
-        text = "numero valido";
-    }
-    document.getElementById("demo").innerHTML = text;
-}
-
-function validarusuario() {
-
-    var y = document.forms["myForm"]["fname"].value;
-    if (y == "") {
-        alert("Name must be filled out");
+function validar() {
+    var a = document.forms["myForm"]["username"].value;
+    if (a == "") {
+        alert("Falta llenar el Usuario");
         return false;
     }
-}
+    var b = document.forms["myForm"]["email"].value;
+    if (b == "") {
+        alert("Falta llenar el Email");
+        return false;
+    }
+    var c = document.forms["myForm"]["phone"].value;
+    if (c == "") {
+        alert("Falta llenar el numero");
+        return false;
+    }
+    var d = document.forms["myForm"]["message"].value;
+    if (d == "") {
+        alert("Falta llenar el mensaje");
+        return false;
+    }
 
 
-
-function validar() {
-    validarusuario();
-    validarnumero();
 
 }
