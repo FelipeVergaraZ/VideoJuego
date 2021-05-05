@@ -18,7 +18,7 @@
         <source src="https://giant.gfycat.com/LazyOddAgama.webm">
         </video>
     <header>
-        <nav class="menu-fixed">
+        <header class="menu-fixed">
             <div class="bordmenu">
                 <script src="java/script.js"></script>
                 <div class="topnav" id="myTopnav">
@@ -27,12 +27,13 @@
                     <a href="items.html">ITEMS</a>
                     <a href="enemigos.html">ENEMIGOS</a>
                     <a href="contact.html">CONTACTANOS</a>
+                    <a href="mercancia.html">PRODUCTOS</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
                 </div>
             </div>
-        </nav>
+        </header>
     </header>
     <br>
     <br>
@@ -50,35 +51,40 @@
                         <div class="p-5">
                             <br>
                             <div>
-                                <form class="marcocontacto" action="/my-handling-form-page" method="post">
+                                <form name="myForm" class="marcocontacto" action="/my-handling-form-page" onsubmit="return validar()" method="post">
 
                                     <div class="pepe">
                                         <div class=" jumbotrontitulo">
-                                            <h1 class="">CONTACTANOS</h1>
+                                            <h2 class="">CONTACTANOS</h2>
                                         </div>
                                         <br>
                                         <label for="username"></label><br>
 
                                         <p class=" jumbotrontext">USUARIO:</p>
-                                        <input class="blanco" type="text" id="username" name="username" required placeholder="Usuario"><br>
+                                        <input class="blanco" type="text" id="username" name="username" pattern="[a-z0-9._%+-]{4,20}" placeholder="Usuario"><br>
 
                                         <label for="email"></label><br>
                                         <P class=" jumbotrontext">EMAIL:</P>
-                                        <input class="blanco" type="email" id="email" name="email" required placeholder="nombre@gmail.com"><br>
+                                        <input class="blanco" type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="nombre@gmail.com"><br>
 
                                         <label for="phone"></label>
                                         <br>
 
                                         <P class=" jumbotrontext">NUMERO TELEFONICO:</P>
-                                        <input class="blanco" type="tel" id="phone" name="phone" pattern="[0-9]{9}" required placeholder="912345678">
+                                        <small class=" jumbotrontextsm">+56</small>
+                                        <input class="blanco" type="tel" id="phone" name="phone" pattern="[0-9]{9}" placeholder="987654321">
                                         <br>
 
                                         <label for="msg"></label><br>
                                         <P class=" jumbotrontext">MENSAJE</P>
-                                        <textarea class="blanco" id="msg" name="user_message" placeholder="Escribe un  mensaje"></textarea>
+
+                                        <input class="blancocel" type="text" id="msg" name="message" placeholder="Escribenos un mensaje."><br>
+                                        <br>
+                                        <input class="blanco" type="file" name="imagensubida" accept="image/png, .jpeg, .jpg, image/gif">
                                         <br>
                                         <br>
                                         <input class="botonenviar" type="reset" onclick="alert('SE BORRO TODO LO INSERTADO')" value="-BORRAR TODO-" required>
+                                        <br>
                                         <br>
                                         <input class="botonenviar" type="submit" type="button" value="-ENVIAR-" required>
                                     </div>
@@ -100,18 +106,31 @@
             <div class="container">
                 <p class="text-center ">Xatgord 2021&nbsp;© Xatgord 2021</p>
                 <p class="text-center ">Loremm ipsum dolor sit amet consectetur adipisicing elit. Explicabo quos eveniet, voluptate modi delectus optio ipsam, consectetur ad iste fugiat libero eligendi repellat, esse hic commodi atque quia inventore officiis!</p>
-                <a class="nav-link"><a class="colti" href="https://www.instagram.com/?hl=es-la"  target="blank">Instragram</a>
-                <img class="ico" src="img/icons8-instagram.gif" width="3%" />
-                <a class="nav-link"><a class="colti" href="https://www.facebook.com" target="blank" >Facebook</a>
-                <img class="ico" src="img/icons8-facebook-rodeado-de-círculo.gif" width="3%" />
-                <a class="nav-link"><a class="colti" href="https://web.whatsapp.com" target="blank" >Whatsapp</a>
-                <img class="ico" src="img/icons8-whatsapp.gif" width="2%" />
-                <a class="nav-link"><a class="colti" href="https://twitter.com" target="blank">twitter</a>
-                <img class="ico" src="img/icons8-twitter.gif" width="30px" />
+                <br>
+                <div class="iconoo">
+                    <div class="iconoo" class=""><img class="rounded img-fluid" src="img/iconoo.png"></div>
+                </div>
+                <div class="container">
+                    <div>
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <div class="p-5">
+                                    <a class="nav-link"><a class="colti" href="https://www.instagram.com/?hl=es-la"  target="blank">Instragram</a>
+                                    <img class="ico" src="img/icons8-instagram.gif" width="30px" />
+                                    <a class="nav-link"><a class="colti" href="https://www.facebook.com" target="blank" >Facebook</a>
+                                    <img class="ico" src="img/icons8-facebook-rodeado-de-círculo.gif" width="30px" />
+                                    <a class="nav-link"><a class="colti" href="https://web.whatsapp.com" target="blank" >Whatsapp</a>
+                                    <img class="ico" src="img/icons8-whatsapp.gif" width="20px" />
+                                    <a class="nav-link"><a class="colti" href="https://twitter.com" target="blank">twitter</a>
+                                    <img class="ico" src="img/icons8-twitter.gif" width="30px" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
-
 </body>
 
 </html>
