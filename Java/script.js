@@ -10,7 +10,7 @@ function myFunction() {
 function validar() {
     var a = document.forms["myForm"]["username"].value;
     if (a == "") {
-        alert("Falta llenar el Usuario");
+        alert("Falta llenar el Usuario,\n ");
         return false;
     }
     var b = document.forms["myForm"]["email"].value;
